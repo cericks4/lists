@@ -20,7 +20,11 @@ public class MyLinkedList<E> {
 	}
 	
 	public E get(int i) {
-		return null;
+        MyLinkedNode<E> j = head.getNext();
+        for (int n = 0; n < i; n++ ){
+            j = j.getNext();
+        }
+        return j.getValue();
 	}
 	
 	public void add(E s) {
@@ -35,6 +39,9 @@ public class MyLinkedList<E> {
 	}
 	
 	public void add(int i, E s) {
+        for (int n = 0; n < i; i++){
+
+        }
 	}
 	
 	public int size() {
